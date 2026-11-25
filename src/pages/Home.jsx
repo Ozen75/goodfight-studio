@@ -47,7 +47,7 @@ export function Footer() {
         <div className="gf-footer__social">
           <FaInstagram /><FaTiktok /><FaMapMarkerAlt />
         </div>
-        <small>© 2024. Good Fight Studio Medan. Mimpin dengan.</small>
+        <small>© 2026. Good Fight Studio Medan.</small>
       </div>
     </footer>
   );
