@@ -8,7 +8,11 @@ import "./Home.css";
 import studioImg from "../assets/studio.jpg";
 import riffAi from "../assets/riff-ai.png";
 
+// ====== GANTI LINK DI BAWAH INI ======
 const WA_LINK = "https://wa.me/6281234567890"; // TODO: ganti nomor WhatsApp
+const INSTAGRAM_LINK = "https://www.instagram.com/USERNAME_KAMU/"; // TODO: ganti username
+const TIKTOK_LINK = "https://www.tiktok.com/@USERNAME_KAMU"; // TODO: ganti username
+const MAPS_LINK = "https://maps.app.goo.gl/XXXXXXXX"; // TODO: ganti link Google Maps
 
 const steps = [
   { icon: <FaRegCalendarAlt />, title: "Pengecekan Jadwal", desc: "Untuk ketersediaan cek ikutur / real-time." },
@@ -45,7 +49,15 @@ export function Footer() {
       </a>
       <div className="gf-footer__right">
         <div className="gf-footer__social">
-          <FaInstagram /><FaTiktok /><FaMapMarkerAlt />
+          <a href={INSTAGRAM_LINK} target="_blank" rel="noreferrer" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a href={TIKTOK_LINK} target="_blank" rel="noreferrer" aria-label="TikTok">
+            <FaTiktok />
+          </a>
+          <a href={MAPS_LINK} target="_blank" rel="noreferrer" aria-label="Lokasi di Google Maps">
+            <FaMapMarkerAlt />
+          </a>
         </div>
         <small>© 2026. Good Fight Studio Medan.</small>
       </div>
